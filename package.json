@@ -1,0 +1,27 @@
+{
+  "name": "workshop-wordpress-php-experience",
+  "version": "1.0.0",
+  "description": "Código utilizado para o Workshop Wordpress PHP Experience 2017",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiodamasceno/workshop-wordpress-php-experience.git"
+  },
+  "author": "fábio damasceno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabiodamasceno/workshop-wordpress-php-experience/issues"
+  },
+  "homepage": "https://github.com/fabiodamasceno/workshop-wordpress-php-experience#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "gulp": "^3.9.1",
+    "gulp-help": "^1.6.1"
+  }
+}

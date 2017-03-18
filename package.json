@@ -4,13 +4,21 @@
   "description": "Código utilizado para o Workshop Wordpress PHP Experience 2017",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gulp deploy",
+    "build": "gulp build",
+    "start": "docker-compose up -d && npm run build && npm run deploy --url=localhost:8080"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fabiodamasceno/workshop-wordpress-php-experience.git"
   },
   "author": "fábio damasceno",
+  "contributors": [
+    {
+      "name": "Lazaro Fernandes Lima Suleiman",
+      "email": "lazaro.fl@gmail.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fabiodamasceno/workshop-wordpress-php-experience/issues"
@@ -20,6 +28,7 @@
     "babel-core": "^6.24.0",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-stage-2": "^6.22.0",
+    "colors": "^1.1.2",
     "gulp": "^3.9.1",
     "gulp-help": "^1.6.1"
   }

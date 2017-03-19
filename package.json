@@ -4,13 +4,18 @@
   "description": "Código utilizado para o Workshop Wordpress PHP Experience 2017",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wp-site-install": "docker-compose run --rm wpcli-container core install --title=PHPExperience --url=localhost:8080 --admin_user=wordpress --admin_password=wordpress --admin_email=lazaro.fernandes@lambda3.com.br --skip-email"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fabiodamasceno/workshop-wordpress-php-experience.git"
   },
   "author": "fábio damasceno",
+  "contributors": [{
+    "name": "Lazaro Fernandes Lima Suleiman",
+    "email": "lazaro.fl@gmail.com"
+  }],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fabiodamasceno/workshop-wordpress-php-experience/issues"

@@ -1,24 +1,31 @@
-version: '2'
-
+version: "2"
 services:
-   db:
-     image: mysql:5.7
-     volumes:
-       - ./database:/var/lib/mysql
-     environment:
+  database-container:
+    image: mysql:5.7
+    ports:
+      - "8081:3306"
+    environment:
        MYSQL_ROOT_PASSWORD: wordpress
        MYSQL_DATABASE: wordpress
        MYSQL_USER: wordpress
        MYSQL_PASSWORD: wordpress
-   wordpress:
-     depends_on:
-       - db
-     volumes:
-       - ./wordpress:/var/www/html
-     image: wordpress:latest
-     ports:
-       - "8000:80"
-     restart: always
-     environment:
-       WORDPRESS_DB_HOST: db:3306
-       WORDPRESS_DB_PASSWORD: wordpress
+
+  wordpress-container:
+    image: wordpress
+    volumes:
+      - ./wordpress:/var/www/html
+    ports:
+      - "8080:80"
+    links:
+      - database-container:mysql
+    environment:
+      WORDPRESS_DB_PASSWORD: wordpress
+
+  wpcli-container:
+    image: tatemz/wp-cli
+    volumes_from:
+        - wordpress-container
+    links:
+        - database-container:mysql
+    entrypoint: wp  
+    command: "--info"

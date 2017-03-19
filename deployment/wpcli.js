@@ -1,7 +1,9 @@
 import url from 'url'
 import httpParse from './http-parse'
 import childProcess from 'child_process'
-import argv from 'argv'
+import yargs from 'yargs'
+
+const argv = yargs.argv
 
 const exec = childProcess.execSync
 

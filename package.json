@@ -6,8 +6,7 @@
   "scripts": {
     "deploy": "gulp deploy",
     "build": "gulp build",
-    "start": "docker-compose up -d && npm run build && npm run deploy --url=localhost:8080",
-    "wp-site-install": "docker-compose run --rm wpcli-container core install --title=PHPExperience --url=localhost:8080 --admin_user=wordpress --admin_password=wordpress --admin_email=lazaro.fernandes@lambda3.com.br --skip-email"
+    "start": "docker-compose up -d && npm run build && npm run deploy --url=localhost:8080"
   },
   "repository": {
     "type": "git",

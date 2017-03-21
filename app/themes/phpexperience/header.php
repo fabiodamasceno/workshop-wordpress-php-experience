@@ -9,7 +9,5 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
   <?php wp_head(); ?>
 </head>
-
 <body>
 HEADER
-

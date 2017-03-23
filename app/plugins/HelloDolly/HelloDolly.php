@@ -1,5 +1,7 @@
 <?php
 
+namespace Plugins\HelloDolly;
+
 class HelloDolly
 {
 	private $musica;

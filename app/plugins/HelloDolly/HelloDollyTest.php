@@ -1,8 +1,8 @@
 <?php
 
-require "HelloDolly.php";
+namespace Plugins\HelloDolly;
 
-class HelloDollyTest extends PHPUnit_Framework_TestCase
+class HelloDollyTest extends \PHPUnit_Framework_TestCase
 {
     private $musica;
 

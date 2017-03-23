@@ -75,3 +75,7 @@ typings/
 database/
 wordpress/
 .phpintel/
+
+#Composer
+composer.lock
+vendor

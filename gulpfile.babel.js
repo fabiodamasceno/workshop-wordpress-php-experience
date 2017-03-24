@@ -31,4 +31,3 @@ gulp.task('build', 'Build da aplicação', ['php'], () => {})
 gulp.task('deploy', 'Deploy da aplicação', () => {
     deploy()
 })
-

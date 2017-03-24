@@ -1,6 +1,11 @@
 {
-    "require-dev": {
-        "squizlabs/php_codesniffer": "2.*"
+  "autoload-dev" : {
+    "psr-4": {
+      "Plugins\\" : "app/plugins"
     }
+  },
+  "require-dev" : {
+    "phpunit/phpunit" : "5.7",
+    "squizlabs/php_codesniffer": "2.*"
+  }
 }
-	

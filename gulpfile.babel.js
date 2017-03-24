@@ -21,7 +21,7 @@ gulp.task('psr', 'verifica namespaces e valida code style', () => {
         .pipe(phpcs.reporter('log'));
 })
 
-gulp.task('php', 'Move arquivos php', ['psr'], () => {
+gulp.task('php', 'Move arquivos php', () => {
     return gulp.src('./app/**/*.*')
         .pipe(gulp.dest('./wordpress/wp-content/'))
 })

@@ -6,7 +6,7 @@
   "scripts": {
     "deploy": "gulp deploy",
     "build": "gulp build",
-    "start": "docker-compose up -d && npm run build && npm run deploy --url=localhost:8080"
+    "start": "composer install && docker-compose up -d && npm run build && npm run deploy --url=localhost:8080"
   },
   "repository": {
     "type": "git",

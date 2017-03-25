@@ -14,6 +14,6 @@
     <header>
         <div id="logo-container">
             <div id="logo"><a href="/">PHP Experience 2017</a></div>
-            <div id="subtitle">PHP é vida!</div>
+            <div id="subtitle">PHP é vida! 2</div>
         </div>
     </header>
